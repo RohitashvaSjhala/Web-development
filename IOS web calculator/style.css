@@ -1,0 +1,253 @@
+.calcii{
+    width: 25%;
+    height: 450px;
+    margin: auto;
+}
+.screen{
+    border: 0px solid black;
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    font-size: 30px;
+    text-align: end;
+}
+/*.screen[type='number'] {
+    
+    -moz-appearance:textfield;
+}
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}*/
+
+::placeholder{
+    opacity: 1;
+}
+.row-1{
+    display: flex;
+    flex-flow: row;
+    height: 90px;
+    width: 100%;
+}
+.button-C button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 170px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+}
+.button-backspace button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    color: black;
+    border-right: 2px solid black;
+}
+
+.button-divide button{
+    background-color: peru;
+    border: none;
+    color: white;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+}
+.row-2{
+    display: flex;
+    flex-flow: row;
+    height: 90px;
+    width: 100%;
+}
+.button-7 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.button-8 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.button-9 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.button-multiply button{
+    background-color: peru;
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: white;
+    border-top: 2px solid black;
+}
+.row-3{
+    display: flex;
+    flex-flow: row;
+    height: 90px;
+    width: 100%;
+}
+.button-4 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.button-5 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.button-6 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.button-subtract button{
+    background-color: peru;
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: white;
+    border-top: 2px solid black;
+}
+.row-4{
+    display: flex;
+    flex-flow: row;
+    height: 90px;
+    width: 100%;
+}
+.button-1 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.button-2 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.button-3 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.button-plus button{
+    background-color: peru;
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: white;
+    border-top: 2px solid black;
+}
+.row-5{
+    display: flex;
+    flex-flow: row;
+    height: 90px;
+    width: 100%;
+}
+.button-0 button{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    width: 255px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: black;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+}
+.button-equals button{
+    background-color: peru;
+    border: none;
+    width: 85px;
+    height: 100%;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: 100;
+    color: white;
+    border-top: 2px solid black;
+}
