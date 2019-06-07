@@ -1,0 +1,175 @@
+.main_heading{
+    text-align: center;
+    font-size: 60px;
+    font-family: system-ui;
+    font-style: normal; 
+    font-weight: normal;
+    padding-top: 18px;
+    /*text-shadow: 1px 1px 3px grey;*/
+}
+*{
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-align: centre;
+    padding-right: 3px;
+}
+.box-1{
+    text-align: center;
+    font-style: italic; 
+    font-size: 30px;
+    padding-top: 30px;
+    border: 1px solid black;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    height: 520px;
+    width: 25%;
+}
+.box-1 p{
+    padding-right: 10px;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+.box-2{
+    border: 0px solid black;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    justify-content: center;
+    height: 520px;
+    width: 50%;
+    font-size: 30px;
+    padding-block-start: 30px;
+    font-style: italic;
+    text-align: center;
+}
+.box-2 p{
+    padding-right: 10px;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+.box-2 img{
+        padding-top: 30px;
+}
+.box-3{
+    border: 1px solid black;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    justify-content: center;
+    height: 520px;
+    width: 25%;
+    font-size: 30px;
+    padding-block-start: 30px;
+    font-style: italic;
+    text-align: center;
+}
+.box-3 p{
+    padding-right: 10px;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+.container-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.box-4{
+    height: 520px;
+    width: 25%;
+    border: 0px solid black;
+    border-bottom-width: 3px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 30px;
+}
+.box-4 p{
+    padding-right: 10px;
+    font-style: normal;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+.box-5{
+    height: 550px;
+    width: 75%;
+    border: 0px solid black;
+    border-right-width: 1px;
+    border-bottom-width: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.box-5 div{
+
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(95, 95, 95);
+    width: 92%;
+    height: 30px;
+    padding: 40px;
+}
+.row-1{
+    background-color: aliceblue;
+}
+.row-1 a{
+    background-color: aliceblue;
+    color:rgb(95, 95, 95);
+    text-decoration-line: none;
+}
+.row-1 a:hover{
+    text-decoration-line: underline ;
+}
+.row-2{
+    background-color: antiquewhite;
+}
+.row-2 a{
+    background-color: antiquewhite;
+    color:rgb(95, 95, 95);
+    text-decoration-line: none;
+}
+.row-2 a:hover{
+    text-decoration-line: underline ;
+}
+    .row-3{
+    background-color: aqua;
+}
+.row-3 a{
+    background-color: aqua;
+    color:rgb(95, 95, 95);
+    text-decoration-line: none;
+}
+.row-3 a:hover{
+    text-decoration-line: underline ;
+
+}    .row-4{
+    background-color: aquamarine;
+}
+.row-4 a{
+    background-color: aquamarine;
+    color:rgb(95, 95, 95);
+    text-decoration-line: none;
+}
+.row-4 a:hover{
+    text-decoration-line: underline ;
+}
+.row-5{
+    background-color: pink;
+}
+.row-5 a{
+    background-color: pink;
+    color:rgb(95, 95, 95);
+    text-decoration-line: none;
+}
+.row-5 a:hover{
+    text-decoration-line: underline ;
+}
