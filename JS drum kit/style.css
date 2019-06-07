@@ -1,0 +1,32 @@
+* {
+    background-size: 100% 1200px;
+    background-image: url("./cake.jpg");
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 70%;
+    vertical-align: middle;
+    margin-top: 18%;
+    position: fixed;
+    background: transparent;
+    padding-left: 14%;
+}
+.main input{
+    height: 100%;
+    width: 70px;
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 5px;
+    background: linear-gradient(rgba(231, 231, 231, 0.5), rgba(109, 109, 109, 0.5));
+    color: black;
+}
+.main input:hover{
+    width: 68px;
+    height: 98%;
+    font-size: 18px;
+}
