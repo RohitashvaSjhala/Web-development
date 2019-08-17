@@ -3,5 +3,6 @@ This repository contains my mini-projects and practise coding sessions of web de
 These projects and sessions includes:
 1. Constructing an IOS web-based calculator, 
 2. Practising parallex scrolling, 
-3. Adding animations from codepen and 
-4. Building a newspaper.
+3. Creating a VR webpage, 
+4. Adding animations from codepen and 
+5. Building a newspaper.
