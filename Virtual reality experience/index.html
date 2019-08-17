@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rohitashva VR</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+
+    <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
+
+</head>
+<body>
+    <a-scene background="color: lightblue" >
+        <a-assets>
+            <img id="pink" src="https://img.gs/bbdkhfbzkk/stretch/http://i.imgur.com/1hyyIUi.jpg" crossorigin="anonymous" />
+            <img src="https://img.gs/bbdkhfbzkk/stretch/https://i.imgur.com/25P1geh.png" id="grid" crossorigin="anonymous">
+            <img src="https://img.gs/bbdkhfbzkk/2048x1024,stretch/http://i.imgur.com/WMNH2OF.jpg" id="chrome" crossorigin="anonymous">
+            <img id="sky" src="https://img.gs/bbdkhfbzkk/2048x2048,stretch/http://i.imgur.com/WqlqEkq.jpg" crossorigin="anonymous" />
+            <a-asset-item id="dawningFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2FdawningOfANewDayRegular.typeface.json?1490305922844" crossorigin="anonymous"></a-asset-item>
+            <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
+            <script id="link" type="text/html">
+                <a-entity class="link"
+                  geometry="primitive: circle; radius: 0.5"
+                  material="shader: flat; color: black; opacity: 0.6"
+                  event-set__mouseenter="scale: 1.2 1.2 1"
+                  event-set__mouseleave="scale: 1 1 1"
+                  sound="on: click; src: #click-sound"></a-entity>
+            </script>
+  
+        </a-assets>
+
+        <a-camera><a-cursor></a-cursor></a-camera>
+        <a-sky src="./sky.jpg" rotation="0 0 0"></a-sky> 
+        <a-sphere radius="0.03" position="1.1 2.56 -3" color="#4CC3D9" shadow segments-height="10"></a-sphere>
+        <a-plane fog="true" position="0 1 0" width="100" height="100" rotation="-90 0 0" color="black" shadow opacity="0.2"></a-plane>
+        <!-- <a-text font="sourcecodepro" position="-2.8 2.8 -3" color="black"  width="13" value="ROHITASHVA S JHALA" text-geometry=" value:jnvrkjev; color:black; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05;"></a-text> -->
+        <!-- <a-entity position="0 0 -5" text="value:jnvrkjev; color:black; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05;"></a-entity> -->
+
+        <a-entity class="Text_name"
+          rotation="0 0 0"
+          position="-8 2.8 -10"
+          text-geometry="value:ROHITASHVA S JHALA; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0.2;"
+          material="opacity: 0.8; color:black;"
+        ></a-entity>
+
+        <a-entity id="links" layout="type: line; margin: 1.5" position="-3.4 2.5 -20" rotation="0 70 0">
+            <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
+            <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
+            <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+          </a-entity>
+
+          <a-entity id="links" layout="type: line; margin: 1.5" position="2.3 2.5 -22.7" rotation="0 -70 0">
+            <a-entity template="src: #link" data-src="#cubes" data-thumb="#cubes-thumb"></a-entity>
+            <a-entity template="src: #link" data-src="#city" data-thumb="#city-thumb"></a-entity>
+            <a-entity template="src: #link" data-src="#sechelt" data-thumb="#sechelt-thumb"></a-entity>
+            <a-entity class="Text_name"
+          rotation="0 0 0"
+          position="-8 2.8 -10"
+          text-geometry="value:Experience ; font: #dawningFont; bevelEnabled: true; bevelSize: 0.05; bevelThickness: 0.05; curveSegments: 12; size: 1; height: 0.2;"
+          material="opacity: 0.8; color:black;"
+        ></a-entity>
+          </a-entity>
+          <a-sphere color="gray" radius="0.2">
+              <a-animation attribute="position"
+              dur="3000"
+              from="3 2.5 -25"
+              to="-3 2.5 -25"
+              repeat="indefinite"></a-animation>
+          </a-sphere>
+        <a-cylinder color= "lightblue" radius="0.3" height="0.9" position="2 2.5 -25">
+            <a-animation attribute="rotation"
+            dur="600"
+            to="0 0 360"
+            repeat="indefinite"
+            easing="linear"></a-animation>
+            <a-animation attribute="material.color"
+            dur="3000"
+            from="lightblue"
+            to="grey"
+            repeat="indefinite"></a-animation>
+            <a-animation attribute="position"
+            dur="3000"
+            form="3 2.5 -25"
+            to="-3 2.5 -25"
+            repeat="indefinite"></a-animation>
+        </a-cylinder>
+        <a-plane position="0 3 -27" 
+        width="5"
+        height="2.5"
+        opacity="0.72"
+        rotation="0 0 0"
+        color="white">
+        </a-plane>
+    </a-scene>
+</body>
+</html>
+<!---->
